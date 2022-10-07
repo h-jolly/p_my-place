@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "eslint:fix": "npx eslint --fix ./pages/*",
+    "prettier:fix": "npx prettier --write ./pages/*"
   },
   "dependencies": {
     "next": "12.3.1",
