@@ -10,12 +10,15 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "extends": [
+    "eslint-config-prettier",
     "eslint:recommended",
     "next/core-web-vitals",
     "airbnb",
     "airbnb-typescript",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended"
   ],
   "rules": {
     "prefer-const": "error",
@@ -30,6 +33,12 @@
           "function-expression",
           "arrow-function"
         ]
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
       }
     ]
   },
